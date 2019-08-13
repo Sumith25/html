@@ -1,0 +1,55 @@
+<html>
+    <body>
+        <div class = "canvas">
+                <canvas id="mycanvas1" width="200px" height="100px" style="border:1px solid black;">
+                your browser doesnt support canvas property. 
+                </canvas>
+                <canvas id="mycanvas2" width="200px" height="100px" style="border:1px solid black;">
+                your browser doesnt support canvas property. 
+                </canvas>
+
+                <canvas id="mycanvas3" width="200px" height="100px" style="border:1px solid black;">
+                        your browser doesnt support canvas property. 
+                </canvas>
+
+                <canvas id="mycanvas4" width="200px" height="100px" style="border:1px solid black;">
+                                your browser doesnt support canvas property. 
+                </canvas>
+        
+        
+                        </div>
+        
+        <script>
+        var c = document.getElementById("mycanvas1");
+        var ctx = c.getContext("2d");
+        ctx.fillStyle = "red";
+        ctx.fillRect(10,10,100,50);
+
+        var c = document.getElementById("mycanvas2");
+        var ctx = c.getContext("2d");
+        ctx.moveTo(10,10);
+        ctx.lineTo(100,100);
+        ctx.lineWidth=5;
+
+        ctx.strokeStyle='red';
+        ctx.stroke();
+
+        var c = document.getElementById("mycanvas3");
+        var ctx = c.getContext("2d");
+        ctx.beginPath();
+        ctx.arc(95,50,40,0,2*Math.PI);
+        ctx.stroke();
+        ctx.fillStyle = "red";
+        ctx.fill();
+
+        var c = document.getElementById("mycanvas4");
+        var ctx = c.getContext("2d");
+
+        ctx.font = "30px Arial";
+        ctx.fillStyle = 'red';
+        ctx.fillText("Hello World",30,50);
+
+
+        </script>
+    </body>
+</html>

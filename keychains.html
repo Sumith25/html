@@ -1,0 +1,37 @@
+<html>
+<head>
+<style> 
+.min {
+
+  background: red;
+  position :relative;
+  -webkit-animation: mymove 10s infinite; /* Safari 4.0 - 8.0 */
+  animation: mymove 25s infinite;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes mymove {
+  from {top: 0px;}
+  to {top: 200px;}
+}
+
+/* Standard syntax */
+@keyframes mymove {
+  0% {top:0px; left: 0px ; background:blue;}
+  25% {top:0px; left: 1000px ; background:green;}
+  50% {top:100px; left: 1000px; background:red;}
+  75% {top:100px; left: 0px ; background:black;}
+  100%{top:0px; left: 0px ; background:grey;
+}
+</style>
+</head>
+<body>
+
+<h1>The @keyframes Rule</h1>
+
+<p><strong>Note:</strong> The @keyframes rule is not supported in Internet Explorer 9 and earlier versions.</p>
+<img class="min" src="minions.jpg">
+<div></div>
+
+</body>
+</html>
